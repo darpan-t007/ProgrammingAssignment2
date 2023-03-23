@@ -10,7 +10,7 @@ makeCacheMatrix <- function(x = matrix())
         x <<- y                             ## value of matrix in parent environment
         inv <<- NULL                        ## if there is a new matrix, reset inv to NULL
     }
- get <- function() x                     ## define the get fucntion - returns value of the matrix argument
+ get <- function() x                        ## define the get function - returns value of the matrix argument
     
     setinverse <- function(inverse) inv <<- inverse  ## assigns value of inv in parent environment
     getinverse <- function() inv                     ## gets the value of inv where called
@@ -24,7 +24,7 @@ cacheSolve <- function(x, ...)
          ## Return a matrix that is the inverse of 'x'
     inv <- x$getinverse()
     if(!is.null(inv)) {
-        message("getting cached data")
+        message("Getting cached data")
         return(inv)
     }
     data <- x$get()
