@@ -1,6 +1,5 @@
 ## GitHub - darpan-t007
 
-## Write a short comment describing this function
 ## This function creates a special "matrix" object that can cache its inverse
 
 makeCacheMatrix <- function(x = matrix()) 
@@ -18,7 +17,6 @@ makeCacheMatrix <- function(x = matrix())
     list(set = set, get = get, setinverse = setinverse, getinverse = getinverse)  ## you need this in order to refer 
 }
 
-## Write a short comment describing this function
 ## This function computes the inverse of the special "matrix" returned by makeCacheMatrix above.
 
 cacheSolve <- function(x, ...) 
